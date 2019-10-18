@@ -1,0 +1,141 @@
+@import './variables.scss';
+@import './mixin.scss';
+@import './transition.scss';
+@import './element-ui.scss';
+@import './sidebar.scss';
+@import './global.scss';
+
+body {
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Microsoft YaHei, Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Arial, sans-serif;
+}
+
+label {
+  font-weight: 700;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#app {
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+div:focus {
+  outline: none;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+// main-container global css
+.app-container {
+  padding: 20px;
+}
+
+.xm-panel{
+	border: 1px solid #dcdfe6;
+	border-radius: 3px;
+	color: #6f7180;
+	box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+	
+	.xm-panel-title, .xm-panel-body, .xm-panel-footer{
+		line-height: 30px;
+		padding: 5px 10px;
+		position: relative;
+	}
+	
+	.xm-panel-title{
+		border-bottom: 1px solid #dfdfdf;
+	}
+	
+	.xm-panel-body{
+		min-height: 40px;
+	}
+	
+	.xm-panel-footer{
+		border-top: 1px solid #dfdfdf;
+	}
+}
+
+
+// 引用类型
+blockquote{
+	margin: 0;
+	margin-bottom: 10px;
+	padding: 15px;
+	line-height: 22px;
+	border-left: 5px solid;
+	border-radius: 0 2px 2px 0;
+	background-color: #f2f2f2;
+	
+	&[type="primary"]{
+		border-left-color: #009688;
+	}
+}
+
+
+
+.blockquote p {
+    font-size: 14px;
+    color: #5e6d82;
+    line-height: 1.5em
+}
+
+.blockquote.tip {
+    padding: 8px 16px;
+    background-color: #ecf8ff;
+    border-radius: 4px;
+    border-left: 5px solid #50bfff;
+    margin: 20px 0
+}
+
+.blockquote.tip code {
+    background-color: hsla(0,0%,100%,.7);
+    color: #445368
+}
+
+.blockquote.warning {
+    padding: 8px 16px;
+    background-color: #fff6f7;
+    border-radius: 4px;
+    border-left: 5px solid #fe6c6f;
+    margin: 20px 0
+}
+
+.blockquote.warning code {
+    background-color: hsla(0,0%,100%,.7);
+    color: #445368
+}
